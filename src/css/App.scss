@@ -1,4 +1,10 @@
 @import './variables/color';
+*{
+    transition-duration: 0.2s;
+    &:hover{
+    transition-duration: 0.1s;
+    }
+}
 body{
     margin: 0;
     padding: 0;
@@ -19,6 +25,7 @@ body{
             }
         }
         .header-links{
+            cursor: pointer;
             float: right;
             width: 50%;
             .header-link{
@@ -28,11 +35,21 @@ body{
                 padding: 10px 20px;
                 transform: translateY(-50%);
                 font-size: 1em;
-                font-weight: 300 !important;
+                font-weight: 300;
             }
             .header-link-highlight{
                 border: 1px solid $yellow;
                 border-radius: 50px;
+                transition-duration: 0.4s;
+                &:hover{
+                    background-color: $yellow;
+                    color: $dark;
+                    font-weight: bold;
+                    transition-duration: 0.1s;
+                }
+            }
+            .header-link-extra{
+                color: $white-6;
             }
         }
     }
