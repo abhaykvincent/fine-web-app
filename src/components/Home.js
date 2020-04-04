@@ -13,8 +13,8 @@ class Home extends React.Component{
             of web and design and get inspired.
           </p>
           <div className="home-links">
-            <button></button>
-            <button></button>
+            <button>Top Web Arts</button>
+            <button>Top Technologies</button>
           </div>
         </article>
       </main>
