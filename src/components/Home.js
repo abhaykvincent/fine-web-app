@@ -5,7 +5,18 @@ class Home extends React.Component{
   render(){
     return (
       <main className="home">
-        <article></article>
+        <article>
+          <h1>We Blog about intresting</h1>
+          <h1>Websites</h1>
+          <p>We are source visually and performantly interesting websites, technologies 
+            and developers, designed to help web developers and designers explore the world 
+            of web and design and get inspired.
+          </p>
+          <div className="home-links">
+            <button></button>
+            <button></button>
+          </div>
+        </article>
       </main>
     );
   }
