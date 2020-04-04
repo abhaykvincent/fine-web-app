@@ -9,7 +9,7 @@ class Footer extends React.Component{
     );
   }
   componentDidMount(){
-    $("footer").css("background","red")
+    //$("footer").css("background","red")
   }
 }
 

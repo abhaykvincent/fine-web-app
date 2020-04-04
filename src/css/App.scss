@@ -2,5 +2,16 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: $dark-color;
+    color: $white-8;
+    background-color: $dark;
+    header{
+        background-color: $dark;
+    }
+    .current-page{
+        min-height: 100vh;
+        padding: 10px 5vw;
+    }
+    footer{
+        background-color: $dark;
+    }
 }

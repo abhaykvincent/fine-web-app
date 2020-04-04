@@ -1,7 +1,6 @@
 import React from 'react';
 import './css/App.scss'; 
 import $ from "jquery";
-
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
@@ -16,7 +15,9 @@ class App extends React.Component{
     return (
       <div className="App">
         <Header/>
-        <Home/>
+        <div className="current-page grid-x">
+          <Home/>
+        </div>
         <Footer/>
       </div>
     );

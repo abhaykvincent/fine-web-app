@@ -10,7 +10,7 @@ class Header extends React.Component{
     );
   }
   componentDidMount(){
-    $("header").css("background","red")
+    //$("header").css("background","red")
   }
 }
 
