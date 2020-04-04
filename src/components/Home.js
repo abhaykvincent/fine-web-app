@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from "jquery";
 
-class Header extends React.Component{
+class Home extends React.Component{
   render(){
     return (
       <main className="home">
@@ -16,4 +16,4 @@ class Header extends React.Component{
   }
 }
 
-export default Header;
+export default Home;
