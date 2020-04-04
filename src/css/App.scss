@@ -5,7 +5,36 @@ body{
     color: $white-8;
     background-color: $dark;
     header{
+        display: flex;
+        padding: 0px 5vw;
         background-color: $dark;
+        .logo-wrap{
+            width: 50%;
+            color: $yellow;
+            .logo{
+                font-weight: 400;
+            }
+            .logo-web{
+                font-weight: 600;
+            }
+        }
+        .header-links{
+            float: right;
+            width: 50%;
+            .header-link{
+                position: relative;
+                top: 50%;
+                float: right;
+                padding: 10px 20px;
+                transform: translateY(-50%);
+                font-size: 1em;
+                font-weight: 300 !important;
+            }
+            .header-link-highlight{
+                border: 1px solid $yellow;
+                border-radius: 50px;
+            }
+        }
     }
     .current-page{
         min-height: 100vh;
@@ -13,5 +42,6 @@ body{
     }
     footer{
         background-color: $dark;
+        padding: 0px 5vw;
     }
 }

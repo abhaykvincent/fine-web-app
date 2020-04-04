@@ -5,7 +5,13 @@ class Header extends React.Component{
   render(){
     return (
       <div className="App">
-          <header>Header</header>
+          <header>
+            <div className="logo-wrap"><h1 className="logo">fine<span className="logo-web">web</span>art.io</h1></div>
+            <div className="header-links">
+              <botton className="header-link header-link-highlight">Login</botton>
+              <botton className="header-link ">Create Account</botton>
+            </div>
+          </header>
       </div>
     );
   }
