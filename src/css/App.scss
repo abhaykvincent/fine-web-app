@@ -63,7 +63,24 @@ body{
         padding: 10px 5vw;
     }
     footer{
+        display: flex;
+        padding: 10px 5vw;
         background-color: $dark;
-        padding: 0px 5vw;
+        .footer-copyright{
+            width: 50%;
+            color: $white-6;
+        }
+        .footer-links{
+            cursor: pointer;
+            float: right;
+            width: 50%;
+            .header-link{
+                margin-left: 20px;
+                float: right;
+                color: $white-6;
+                font-size: 1em;
+                font-weight: 300;
+            }
+        }
     }
 }
