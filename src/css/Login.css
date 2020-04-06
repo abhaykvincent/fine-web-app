@@ -1,14 +1,89 @@
 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
 
 *:hover {
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 a {
   color: inherit;
+}
+
+body .login .login-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .login .login-page .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .login .login-page .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .login .login-page .right .login-panel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 30vw;
+  padding: 10px 32.36px 40px 32.36px;
+  -webkit-transform: translate(30%, -50%);
+          transform: translate(30%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+body .login .login-page .right .login-panel .login-head {
+  text-align: center;
+}
+
+body .login .login-page .right .login-panel label {
+  text-align: center;
+}
+
+body .login .login-page .right .login-panel form .input-label {
+  width: 100%;
+  font-size: 0.7em;
+}
+
+body .login .login-page .right .login-panel form .input-full {
+  width: 100%;
+  font-size: 1.5em;
+  border-radius: 5px;
+  margin: 5px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  outline: none;
+}
+
+body .login .login-page .right .login-panel form .input-full:focus {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid #f9d74c;
+}
+
+body .login .login-page .right .login-panel form .login-button {
+  cursor: pointer;
+  display: block;
+  padding: 10px 16.18px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  border: 1px solid #f9d74c;
+  border-radius: 30px;
+  background-color: #f9d74c;
+  color: black;
+  text-align: center;
 }
 /*# sourceMappingURL=Login.css.map */

@@ -1,13 +1,73 @@
 @import './variables/color';
 *{
+    box-sizing: border-box;
     transition-duration: 0.2s;
     &:hover{
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
     }
 }
 a{
     color: inherit;
 }
 body{
-    
+    .login{
+        .login-page{
+            display: flex;
+            .left{
+                flex: 1;
+            }
+            .right{
+                flex: 1;
+                .login-panel{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 30vw;
+                    padding: 10px 32.36px 40px 32.36px;
+                    transform: translate(30%, -50%);
+                    background-color: white;
+                    border-radius: 10px;
+                    color: black;
+                    .login-head{
+                        text-align: center;
+                    }
+                    label{
+                        text-align: center;
+                    }
+                    form{
+                        .input-label{
+                            width: 100%;
+                            font-size: 0.7em;
+                        }
+                        .input-full{
+                            width: 100%;
+                            font-size: 1.5em;
+                            border-radius: 5px;
+                            margin: 5px 0px;
+                            border: 1px solid rgba(0, 0, 0, 0.2);
+                            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+                            padding: 5px;
+                            outline: none;
+                            &:focus{
+                                border: 1px solid rgba(0, 0, 0, 0.05);
+                                border-bottom: 2px solid $yellow;
+                            }
+                            
+                        }
+                        .login-button{
+                            cursor: pointer;
+                            display: block;
+                            padding: 10px 16.18px;
+                            transform: translateY(20px);
+                            border: 1px solid $yellow;
+                            border-radius: 30px;
+                            background-color: $yellow;
+                            color: black;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
