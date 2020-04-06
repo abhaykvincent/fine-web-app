@@ -1,0 +1,14 @@
+* {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+*:hover {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+a {
+  color: inherit;
+}
+/*# sourceMappingURL=Login.css.map */

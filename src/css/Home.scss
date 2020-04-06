@@ -1,0 +1,61 @@
+@import './variables/color';
+*{
+    transition-duration: 0.2s;
+    &:hover{
+    transition-duration: 0.1s;
+    }
+}
+a{
+    color: inherit;
+}
+button{
+    background-color: none !important;
+}
+body{
+    width: 100%;
+    background-image: url('../img/background-techs.png');
+    background-position: top 90px right;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-color: $dark;
+    .home{
+        .home-animate{
+            transform: translatex(-200);
+        }
+        .home-left{
+            position: absolute;
+            top: 50vh;
+            width: 50%;
+            transform: translateY(-50%);
+            .home-head{
+                width: 200%;
+                font-size: 4em;
+                margin: 0px;
+            }
+            .home-head-sub{
+                font-size: 4em;
+                margin: 0px;
+            }
+            .home-content{
+                width: 70%
+            }
+            .home-links{
+                display: flex;
+                .home-link{
+                    cursor: pointer;
+                    display: inline;
+                    color:$yellow;
+                    padding: 10px 16.18px;
+                    margin: 20px;
+                    margin-left: 0px;
+                    border: 1px solid $yellow;
+                    border-radius: 30px;
+                    &.home-link-highlight{
+                        background-color: $yellow;
+                        color: black
+                    }
+                }
+            }
+        }
+    }
+}

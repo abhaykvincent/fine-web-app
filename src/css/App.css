@@ -1,0 +1,139 @@
+s
+* {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+s
+*:hover {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #121212;
+  background-image: none;
+}
+
+body .loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #21202b;
+  z-index: 100;
+}
+
+body .loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .App {
+  z-index: 90;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 5vw;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+body header .logo-wrap {
+  width: 50%;
+  color: #f9d74c;
+}
+
+body header .logo-wrap .logo {
+  font-weight: 400;
+}
+
+body header .logo-wrap .logo-web {
+  font-weight: 600;
+}
+
+body header .header-links {
+  cursor: pointer;
+  float: right;
+  width: 50%;
+}
+
+body header .header-links .header-link {
+  position: relative;
+  top: 50%;
+  float: right;
+  padding: 5px 16.18px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1em;
+  font-weight: 300;
+}
+
+body header .header-links .header-link-highlight {
+  border: 1px solid #f9d74c;
+  border-radius: 50px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+body header .header-links .header-link-highlight:hover {
+  background-color: #f9d74c;
+  color: #121212;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+body header .header-links .header-link-extra {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body header .header-links .header-link-extra:hover {
+  border-bottom: 2px solid #f9d74c;
+  margin: 0px 20px;
+  padding: 6px 0;
+}
+
+body .current-page {
+  min-height: 80vh;
+  padding: 10px 5vw;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 5vw;
+}
+
+body footer .footer-copyright {
+  width: 50%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body footer .footer-links {
+  cursor: pointer;
+  float: right;
+  width: 50%;
+}
+
+body footer .footer-links .header-link {
+  margin-left: 20px;
+  float: right;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1em;
+  font-weight: 300;
+}
+/*# sourceMappingURL=App.css.map */

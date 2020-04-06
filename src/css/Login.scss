@@ -1,0 +1,13 @@
+@import './variables/color';
+*{
+    transition-duration: 0.2s;
+    &:hover{
+    transition-duration: 0.1s;
+    }
+}
+a{
+    color: inherit;
+}
+body{
+    
+}

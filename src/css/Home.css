@@ -1,0 +1,77 @@
+* {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+*:hover {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  background-color: none !important;
+}
+
+body {
+  width: 100%;
+  background-image: url("../img/background-techs.png");
+  background-position: top 90px right;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-color: #121212;
+}
+
+body .home .home-animate {
+  -webkit-transform: translatex(-200);
+          transform: translatex(-200);
+}
+
+body .home .home-left {
+  position: absolute;
+  top: 50vh;
+  width: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .home .home-left .home-head {
+  width: 200%;
+  font-size: 4em;
+  margin: 0px;
+}
+
+body .home .home-left .home-head-sub {
+  font-size: 4em;
+  margin: 0px;
+}
+
+body .home .home-left .home-content {
+  width: 70%;
+}
+
+body .home .home-left .home-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .home .home-left .home-links .home-link {
+  cursor: pointer;
+  display: inline;
+  color: #f9d74c;
+  padding: 10px 16.18px;
+  margin: 20px;
+  margin-left: 0px;
+  border: 1px solid #f9d74c;
+  border-radius: 30px;
+}
+
+body .home .home-left .home-links .home-link.home-link-highlight {
+  background-color: #f9d74c;
+  color: black;
+}
+/*# sourceMappingURL=Home.css.map */

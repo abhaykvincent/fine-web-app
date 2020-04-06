@@ -1,19 +1,41 @@
-@import './variables/color';
+@import './variables/color';s
 *{
     transition-duration: 0.2s;
     &:hover{
     transition-duration: 0.1s;
     }
 }
+a{
+    color: inherit;
+}
 body{
     margin: 0;
     padding: 0;
     color: $white-8;
     background-color: $dark;
+    background-image: none;
+    .loader{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #21202b;
+        z-index: 100;
+        img{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .App{
+
+        z-index: 90;
+    }
     header{
         display: flex;
         padding: 0px 5vw;
-        background-color: $dark;
+        transform: translateY(30px);
         .logo-wrap{
             width: 50%;
             color: $yellow;
@@ -32,7 +54,7 @@ body{
                 position: relative;
                 top: 50%;
                 float: right;
-                padding: 10px 20px;
+                padding: 5px 16.18px;
                 transform: translateY(-50%);
                 font-size: 1em;
                 font-weight: 300;
@@ -64,7 +86,6 @@ body{
     footer{
         display: flex;
         padding: 10px 5vw;
-        background-color: $dark;
         .footer-copyright{
             width: 50%;
             color: $white-6;

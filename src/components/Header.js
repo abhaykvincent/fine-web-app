@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import $ from "jquery";
 
 class Header extends React.Component{
@@ -6,9 +12,9 @@ class Header extends React.Component{
     return (
       <div className="header">
           <header>
-            <div className="logo-wrap"><h1 className="logo">fine<span className="logo-web">web</span>art.io</h1></div>
+            <div className="logo-wrap"><Link to="/"><h1 className="logo">fine<span className="logo-web">web</span>art.io</h1></Link></div>
             <div className="header-links">
-              <botton className="header-link header-link-highlight">Login</botton>
+            <Link to="/login"><botton className="header-link header-link-highlight login">Login</botton></Link>
               <botton className="header-link header-link-extra">Create Account</botton>
             </div>
           </header>
